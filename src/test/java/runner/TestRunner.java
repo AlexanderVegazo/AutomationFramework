@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
 //@RunWith(Cucumber.class)
 @CucumberOptions(features = {"src/test/java/features"},
         plugin = {"json:target/cucumber.json", "html:target/site/cucumber-pretty"},
-        glue = "steps")
+        glue = "steps", tags = "@facebookLogin"
+)
 
 @RunWith(Cucumber.class)
 public class TestRunner {
