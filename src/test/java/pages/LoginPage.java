@@ -24,14 +24,12 @@ public class LoginPage {
     @FindBy(how = How.NAME, using = "Login")
     public WebElement btnLogin;
 
-    public void Login(String userName, String password)
-    {
+    public void Login(String userName, String password) {
         txtUserName.sendKeys(userName);
         txtPassword.sendKeys(password);
     }
 
-    public void ClickLogin()
-    {
+    public void ClickLogin() {
         btnLogin.submit();
     }
 
